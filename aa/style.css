@@ -1,0 +1,117 @@
+/* Define o fundo azul claro para toda a página */
+body {
+    background-color: #e0f7fa; /* Azul claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cor padrão do texto */
+}
+
+header {
+    background-color: #01579b; /* Azul escuro para o cabeçalho */
+    padding: 10px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para o cabeçalho */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+button {
+    background-color: #0277bd; /* Azul do botão */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+button:hover {
+    background-color: #01579b; /* Azul mais escuro no hover */
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px; /* Largura máxima para melhor leitura */
+    background-color: #ffffff; /* Fundo branco para as seções */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #01579b; /* Azul escuro para os títulos */
+}
+
+footer {
+    background-color: #01579b; /* Azul escuro para o rodapé */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para o rodapé */
+}
+
+/* Seção do Candidato */
+.candidate {
+    background-color: #f5f5f5; /* Fundo cinza claro para destacar a seção do candidato */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.candidate-profile {
+    display: flex;
+    align-items: center;
+}
+
+.candidate-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.candidate-info {
+    max-width: 600px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .candidate-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .candidate-photo {
+        margin: 0 0 20px 0;
+    }
+}
